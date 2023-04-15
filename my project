@@ -100,7 +100,7 @@ user=input("Enter the name : ")
 password=input("enter the password : ")
 tries=5
 while True:
-    re_password=input("Re-Enter the password")
+    re_password=input("Re-Enter the password : ")
     if password==re_password:
         print("lets start the game")
         game()
