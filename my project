@@ -1,0 +1,114 @@
+import random
+def game():
+    score1=0
+    score2=0
+    x='y'
+    while x=='y':
+        a=random.randint(1,6)
+        b=random.randint(1,6)
+        if a==1:
+            print("-----")
+            print("     ")
+            print("  *  ")
+            print("     ")
+            print("-----")
+        elif a==2:
+            print("-----")
+            print("*    ")
+            print("     ")
+            print("    *")
+            print("-----")
+        elif a==3:
+            print("-----")
+            print("*    ")
+            print("  *  ")
+            print("    *")
+            print("-----")
+        elif a==4:
+            print("-----")
+            print("*   *")
+            print("     ")
+            print("*   *")
+            print("-----")
+        elif a==5:
+            print("-----")
+            print("*   *")
+            print("  *  ")
+            print("*   *")
+            print("-----")
+        elif a==6:
+            print("-----")
+            print("*   *")
+            print("*   *")
+            print("*   *")
+            print("-----")
+        print("compter score",a)
+        if b==1:
+            print("-----")
+            print("     ")
+            print("  *  ")
+            print("     ")
+            print("-----")
+        elif b==2:
+            print("-----")
+            print("*    ")
+            print("     ")
+            print("    *")
+            print("-----")
+        elif b==3:
+            print("-----")
+            print("*    ")
+            print("  *  ")
+            print("    *")
+            print("-----")
+        elif b==4:
+            print("-----")
+            print("*   *")
+            print("     ")
+            print("*   *")
+            print("-----")
+        elif b==5:
+            print("-----")
+            print("*   *")
+            print("  *  ")
+            print("*   *")
+            print("-----")
+        elif b==6:
+            print("-----")
+            print("*   *")
+            print("*   *")
+            print("*   *")
+            print("-----")
+        print("user score",b)
+        if a>b:
+            score1=score1+1
+            score2=score2+0
+            print("computer won")
+        elif a==b:
+            score1=score1+0
+            score2=score2+0
+            print("its draw")
+        else:
+            score1=score1+0
+            score2+score2+1
+            print("user won")
+        x=input("Do you want to play again (Y/N)? : ")
+        print("Thank you")
+        
+print("***** DICE SIMULATOR GAME *****")
+user=input("Enter the name : ")
+password=input("enter the password : ")
+tries=5
+while True:
+    re_password=input("Re-Enter the password")
+    if password==re_password:
+        print("lets start the game")
+        game()
+        break
+    tries=tries-1
+    if tries==0:
+        print("your password is not correct")
+        break
+            
+                
+            
