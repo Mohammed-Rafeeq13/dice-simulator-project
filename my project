@@ -93,7 +93,7 @@ def game():
             score2+score2+1
             print("user won")
         x=input("Do you want to play again (Y/N)? : ")
-        print("Thank you")
+    print("Thank you")
         
 print("***** DICE SIMULATOR GAME *****")
 user=input("Enter the name : ")
